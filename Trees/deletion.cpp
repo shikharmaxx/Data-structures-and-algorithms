@@ -37,7 +37,7 @@ void delete_deepest(struct node *root, struct node *deepnode)
         q.pop();
         if (temp == deepnode)
         {
-            temp == NULL;
+            temp = NULL;
             delete deepnode;
             return;
         }
@@ -72,6 +72,7 @@ void delete_deepest(struct node *root, struct node *deepnode)
 
 node *deletion(node *root, int value)
 {
+
     if (root == NULL)
         return NULL;
 
